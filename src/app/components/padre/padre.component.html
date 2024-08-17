@@ -1,0 +1,7 @@
+<h2>Padre</h2>
+
+{{pageNumber}}
+
+<input #busqueda  type="number" [value]="pageNumber" (input)="cambiopage(+busqueda.value)">
+
+<app-hijo [(page)]="pageNumber"></app-hijo>
